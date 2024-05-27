@@ -5,6 +5,8 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared/shared.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeComponent } from 'src/app/modules/home/home.component';
+import { DashbordAdminComponent } from 'src/app/modules/dashbordAdmin/dashbordAdmin.component';
+import { DashbordUserComponent } from 'src/app/modules/dashbordUser/dashbordUser.component';
 
 @NgModule({
   imports: [
@@ -14,7 +16,9 @@ import { HomeComponent } from 'src/app/modules/home/home.component';
     SharedModule
   ],
   declarations: [
-    DefaultComponent
+    DefaultComponent,
+    DashbordAdminComponent,
+    DashbordUserComponent
   ]
 })
 export class DefaultModule { }
